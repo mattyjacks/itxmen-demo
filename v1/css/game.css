@@ -1,0 +1,91 @@
+/* Honey Bee Game Styles */
+#bee-game-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    /* Let clicks pass through */
+    z-index: 9999;
+    overflow: hidden;
+}
+
+#bee,
+#honey-pot {
+    position: absolute;
+    top: -25px;
+    /* Adjust for centering emoji */
+    left: -25px;
+    font-size: 3rem;
+    will-change: transform;
+    user-select: none;
+    line-height: 1;
+    filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.2));
+}
+
+#bee {
+    z-index: 10001;
+    transition: transform 0.05s linear;
+    /* Smooth micro-movements */
+}
+
+#honey-pot {
+    z-index: 10000;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    cursor: pointer;
+    pointer-events: auto;
+    /* Let pot be clickable just in case */
+}
+
+#honey-pot:hover {
+    transform: scale(1.1) !important;
+}
+
+#honey-score {
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+    background: rgba(255, 255, 255, 0.9);
+    border: 2px solid var(--accent-primary);
+    color: var(--text-primary);
+    padding: 0.5rem 1.5rem;
+    border-radius: 9999px;
+    font-weight: 700;
+    font-size: 1.2rem;
+    box-shadow: 0 4px 15px rgba(236, 72, 153, 0.3);
+    transition: transform 0.2s ease;
+}
+
+#win-message {
+    position: absolute;
+    background: var(--accent-primary);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    pointer-events: none;
+    opacity: 0;
+    transform: translate(-50%, 0) scale(0.8);
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    white-space: nowrap;
+    box-shadow: 0 4px 10px rgba(236, 72, 153, 0.4);
+}
+
+/* Little CSS animation for the bee flying */
+@keyframes flutter {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
+#bee {
+    animation: flutter 0.8s ease-in-out infinite;
+}
