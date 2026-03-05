@@ -2,13 +2,13 @@
    Variables & Theming
    ========================================================================== */
 :root {
-    /* Colors - V3 Black, Orange, White */
-    --bg-primary: #080808;
-    --bg-secondary: #121212;
-    --bg-glass: rgba(18, 18, 18, 0.7);
-    --accent-primary: #FF6600;
-    --accent-hover: #e65c00;
-    --accent-glow: rgba(255, 102, 0, 0.2);
+    /* Colors - V3 Purple Theme */
+    --bg-primary: #0a0512;
+    --bg-secondary: #140b2f;
+    --bg-glass: rgba(20, 11, 47, 0.7);
+    --accent-primary: #9D4EDD;
+    --accent-hover: #7b2cbf;
+    --accent-glow: rgba(157, 78, 221, 0.2);
     --text-primary: #ffffff;
     --text-secondary: #a0a0a0;
     --text-muted: #666666;
@@ -129,7 +129,7 @@ a:hover {
 .btn-primary:hover {
     background: var(--accent-hover);
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(255, 102, 0, 0.4);
+    box-shadow: 0 6px 20px rgba(157, 78, 221, 0.4);
     color: white;
 }
 
@@ -189,14 +189,14 @@ a:hover {
 
 .glass-card:hover {
     transform: translateY(-5px);
-    border-color: rgba(255, 102, 0, 0.3);
+    border-color: rgba(157, 78, 221, 0.3);
 }
 
 .feature-icon {
     width: 56px;
     height: 56px;
     border-radius: 14px;
-    background: rgba(255, 102, 0, 0.1);
+    background: rgba(157, 78, 221, 0.1);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -396,7 +396,7 @@ body {
     border: 1px solid var(--accent-primary);
     padding: 1rem;
     border-radius: 8px;
-    background: rgba(255, 102, 0, 0.05);
+    background: rgba(157, 78, 221, 0.05);
 }
 
 @media (max-width: 768px) {
@@ -465,7 +465,7 @@ body {
     opacity: 0.5;
 }
 
-.blob-orange {
+.blob-purple {
     background: var(--accent-primary);
     width: 400px;
     height: 400px;
