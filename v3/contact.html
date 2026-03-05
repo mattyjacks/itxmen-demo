@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - ITXMEN (Demo)</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .page-header {
+            padding: 10rem 0 4rem;
+            text-align: center;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.5fr;
+            gap: 4rem;
+            margin-top: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="site-header-container"></div>
+
+    <main>
+        <section class="page-header">
+            <div class="bg-blob blob-orange floating" style="right: 10%; top: 20%;"></div>
+            <div class="container fade-in-up">
+                <h1 class="hero-title">Let’s Talk About Your <span class="gradient-text">IT Challenges</span></h1>
+                <p class="hero-description" style="margin: 0 auto;">Ready to take your IT to the next level? Schedule a
+                    free consultation.</p>
+            </div>
+        </section>
+
+        <section class="section container">
+            <div class="contact-grid">
+                <!-- Info -->
+                <div class="contact-info fade-in-up">
+                    <div class="glass-card" style="padding: 2rem;">
+                        <h3 style="margin-bottom: 1rem; font-size: 1.5rem;">Reach Out</h3>
+                        <p style="color: var(--text-secondary); margin-bottom: 2rem;">We’re here to help you navigate
+                            your technology roadmap and ensure your business is ready for the future.</p>
+
+                        <div style="margin-bottom: 1.5rem; display: flex; align-items: center; gap: 1rem;">
+                            <div class="feature-icon" style="width: 40px; height: 40px; margin-bottom: 0;">
+                                <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path
+                                        d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                                    </path>
+                                    <polyline points="22,6 12,13 2,6"></polyline>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 style="font-size: 1rem;">Email</h4>
+                                <a href="mailto:info@itxmen.com"
+                                    style="color: var(--text-secondary);">info@itxmen.com</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Form -->
+                <div class="glass-card fade-in-up stagger-1">
+                    <form onsubmit="event.preventDefault(); alert('Demo Form Submitted!');">
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 1.5rem;">
+                            <div class="form-group" style="margin-bottom: 0;">
+                                <label class="form-label">First Name</label>
+                                <input type="text" class="form-control" required>
+                            </div>
+                            <div class="form-group" style="margin-bottom: 0;">
+                                <label class="form-label">Last Name</label>
+                                <input type="text" class="form-control" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Business Email</label>
+                            <input type="email" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Company Name</label>
+                            <input type="text" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">How can we help?</label>
+                            <textarea class="form-control" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%; padding: 1rem;">Send
+                            Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="site-footer-container"></div>
+    <script src="js/layout.js"></script>
+</body>
+
+</html>

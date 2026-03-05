@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - ITXMEN (Demo)</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .page-header {
+            padding: 12rem 0 6rem;
+            text-align: center;
+            background: radial-gradient(circle at center, rgba(255, 102, 0, 0.1) 0%, transparent 70%);
+        }
+
+        .content-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        @media (max-width: 768px) {
+            .content-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="site-header-container"></div>
+
+    <main>
+        <section class="page-header">
+            <div class="container fade-in-up">
+                <h1 class="hero-title">About <span class="gradient-text">ITXMEN</span></h1>
+                <p class="hero-description" style="margin: 0 auto;">50+ Years of Combined Experience. Executive-Level IT
+                    Strategy, Tailored for SMBs.</p>
+            </div>
+        </section>
+
+        <section class="section container">
+            <div class="content-grid">
+                <div class="fade-in-up">
+                    <h2 style="font-size: 2.5rem; margin-bottom: 1.5rem;">Why Choose ITXMEN?</h2>
+                    <p style="color: var(--text-secondary); margin-bottom: 1rem; font-size: 1.1rem;">
+                        At ITXMEN, we help small and mid-sized businesses transform the way they use IT. Our consultants
+                        bring enterprise-level expertise to organizations that need flexible, practical, and
+                        forward-thinking solutions.
+                    </p>
+                    <ul
+                        style="color: var(--text-secondary); margin-left: 1.5rem; margin-bottom: 2rem; list-style-type: '✅ ';">
+                        <li style="margin-bottom: 0.5rem;">Cross-industry expertise: medical, retail, manufacturing,
+                            etc.</li>
+                        <li style="margin-bottom: 0.5rem;">Scalable solutions for growing businesses</li>
+                        <li style="margin-bottom: 0.5rem;">End-to-End Support—From Planning to Execution</li>
+                        <li style="margin-bottom: 0.5rem;">Unbiased, Vendor-Agnostic Guidance</li>
+                        <li style="margin-bottom: 0.5rem;">Trusted advisors, not just consultants</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-primary">Work With Us</a>
+                </div>
+                <div class="glass-card fade-in-up stagger-2"
+                    style="padding: 3rem; text-align: center; border-color: var(--accent-primary);">
+                    <div style="font-size: 4rem; font-weight: 800; color: var(--accent-primary); margin-bottom: 1rem;">
+                        50+</div>
+                    <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem;">Years Experience</h3>
+                    <p style="color: var(--text-secondary);">Combined enterprise-level expertise brought directly to
+                        your business.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="site-footer-container"></div>
+    <script src="js/layout.js"></script>
+</body>
+
+</html>

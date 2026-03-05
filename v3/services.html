@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - ITXMEN (Demo)</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .page-header {
+            padding: 12rem 0 6rem;
+            text-align: center;
+        }
+
+        .service-row {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+            margin-bottom: 4rem;
+        }
+
+        .service-card {
+            display: flex;
+            align-items: flex-start;
+            gap: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            .service-card {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="site-header-container"></div>
+
+    <main>
+        <section class="page-header">
+            <div class="bg-blob blob-orange floating" style="left: -100px;"></div>
+            <div class="container fade-in-up">
+                <h1 class="hero-title">Our <span class="gradient-text">Services</span></h1>
+                <p class="hero-description" style="margin: 0 auto;">Comprehensive IT solutions designed for scale and
+                    security.</p>
+            </div>
+        </section>
+
+        <section class="section container">
+
+            <div id="leadership" class="glass-card service-card fade-in-up service-row">
+                <div class="feature-icon" style="flex-shrink: 0;"><svg width="24" height="24" fill="none"
+                        stroke="currentColor" stroke-width="2">
+                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                        <circle cx="9" cy="7" r="4" />
+                        <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                        <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                    </svg></div>
+                <div>
+                    <h3 style="font-size: 2rem; margin-bottom: 1rem;">Fractional IT Leadership & Management</h3>
+                    <p style="color: var(--text-secondary); font-size: 1.1rem; margin-bottom: 1rem;">Every business
+                        needs IT leadership no matter the size! If you don’t need it full-time, a fractional approach
+                        may be the perfect fit. We deliver the strategic insight of a seasoned IT executive—without the
+                        full-time cost.</p>
+                </div>
+            </div>
+
+            <div id="ai" class="glass-card service-card fade-in-up service-row">
+                <div class="feature-icon" style="flex-shrink: 0;"><svg width="24" height="24" fill="none"
+                        stroke="currentColor" stroke-width="2">
+                        <path
+                            d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
+                        <polyline points="3.27 6.96 12 12.01 20.73 6.96" />
+                        <line x1="12" y1="22.08" x2="12" y2="12" />
+                    </svg></div>
+                <div>
+                    <h3 style="font-size: 2rem; margin-bottom: 1rem;">AI Strategy</h3>
+                    <p style="color: var(--text-secondary); font-size: 1.1rem; margin-bottom: 1rem;">AI is shaping the
+                        future. Don’t risk falling behind through missed opportunities. We help you harness AI to
+                        automate tasks, uncover valuable insights, and stay competitive securely.</p>
+                </div>
+            </div>
+
+            <div id="cloud" class="glass-card service-card fade-in-up service-row">
+                <div class="feature-icon" style="flex-shrink: 0;"><svg width="24" height="24" fill="none"
+                        stroke="currentColor" stroke-width="2">
+                        <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z" />
+                    </svg></div>
+                <div>
+                    <h3 style="font-size: 2rem; margin-bottom: 1rem;">IT Infrastructure & Cloud Strategy</h3>
+                    <p style="color: var(--text-secondary); font-size: 1.1rem; margin-bottom: 1rem;">Struggling with
+                        inefficient systems, security gaps, or scalability challenges? We design and implement
+                        modernization strategies that boost efficiency while reducing costs.</p>
+                </div>
+            </div>
+
+            <div id="security" class="glass-card service-card fade-in-up service-row">
+                <div class="feature-icon" style="flex-shrink: 0;"><svg width="24" height="24" fill="none"
+                        stroke="currentColor" stroke-width="2">
+                        <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                        <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                    </svg></div>
+                <div>
+                    <h3 style="font-size: 2rem; margin-bottom: 1rem;">Cybersecurity & Compliance</h3>
+                    <p style="color: var(--text-secondary); font-size: 1.1rem; margin-bottom: 1rem;">Facing compliance
+                        challenges? We help you reduce the risk of costly breaches, avoid penalties, and build customer
+                        trust by keeping your data secure.</p>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <div id="site-footer-container"></div>
+    <script src="js/layout.js"></script>
+</body>
+
+</html>
