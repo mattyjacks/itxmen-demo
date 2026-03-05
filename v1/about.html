@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | ITXMEN Demo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .page-header {
+            padding: 8rem 0 4rem;
+            text-align: center;
+        }
+
+        .about-content {
+            max-width: 800px;
+            margin: 0 auto;
+            font-size: 1.125rem;
+        }
+
+        .about-content h2 {
+            margin-top: 3rem;
+            font-size: 2rem;
+        }
+
+        .about-list {
+            margin-top: 1.5rem;
+        }
+
+        .about-list li {
+            margin-bottom: 0.75rem;
+            display: flex;
+            align-items: flex-start;
+            gap: 0.5rem;
+        }
+
+        .about-list li::before {
+            content: '✅';
+            color: var(--accent-primary);
+        }
+    </style>
+</head>
+
+<body>
+
+    <site-header></site-header>
+
+    <main>
+        <section class="page-header container fade-up">
+            <h1>Why Choose <span class="text-gradient">ITXMEN?</span></h1>
+            <p>Expert IT Strategy. Scalable Solutions. Real Results.</p>
+        </section>
+
+        <section class="container about-content fade-up" style="padding-top: 0;">
+            <p>At ITXMEN, we help small and mid-sized businesses transform the way they use IT. With over 50 years of
+                combined experience, our consultants bring enterprise-level expertise to organizations that need
+                flexible, practical, and forward-thinking solutions.</p>
+
+            <h2 class="fade-up">Our Approach</h2>
+            <p class="fade-up stagger-1">Whether you need to stabilize your current IT environment, scale your
+                operations, or secure your systems—we’re here to help. ITXMEN partners with you to make technology a
+                competitive advantage, not a burden.</p>
+
+            <ul class="about-list fade-up stagger-2">
+                <li>Executive-Level IT Strategy, Tailored for SMBs</li>
+                <li>Cross-industry expertise: medical, retail, manufacturing, education, logistics & more</li>
+                <li>Scalable solutions for growing businesses</li>
+                <li>End-to-End Support—From Planning to Execution</li>
+                <li>Unbiased, Vendor-Agnostic Guidance</li>
+                <li>Trusted advisors, not just consultants</li>
+            </ul>
+        </section>
+    </main>
+
+    <site-footer></site-footer>
+
+    <script src="js/components.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
