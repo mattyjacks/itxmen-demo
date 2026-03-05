@@ -3,15 +3,15 @@
    ========================================================================== */
 :root {
     /* Colors */
-    --bg-color: #0d0f12;
-    --bg-gradient: linear-gradient(135deg, #0d0f12 0%, #1a1f2b 100%);
-    --text-primary: #f0f4f8;
+    --bg-color: #000000;
+    --bg-gradient: linear-gradient(135deg, #000000 0%, #1a1a1a 100%);
+    --text-primary: #ffffff;
     --text-secondary: #94a3b8;
-    --accent-color: #3b82f6;
-    --accent-glow: rgba(59, 130, 246, 0.4);
-    --secondary-accent: #10b981;
-    --card-bg: rgba(30, 41, 59, 0.5);
-    --card-border: rgba(255, 255, 255, 0.05);
+    --accent-color: #ff6600;
+    --accent-glow: rgba(255, 102, 0, 0.4);
+    --secondary-accent: #fbbf24;
+    --card-bg: rgba(24, 24, 27, 0.6);
+    --card-border: rgba(255, 255, 255, 0.1);
 
     /* Typography */
     --font-main: 'Outfit', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
@@ -112,7 +112,7 @@ h6 {
    ========================================================================== */
 /* Disclaimer Banner */
 .disclaimer-banner {
-    background: #ef4444;
+    background: #ff6600;
     color: white;
     text-align: center;
     font-size: 0.85rem;
@@ -228,7 +228,7 @@ h6 {
 .btn-primary:hover {
     transform: translateY(-2px);
     box-shadow: 0 6px 20px var(--accent-glow);
-    background: #2563eb;
+    background: #e65c00;
 }
 
 .btn-outline {
@@ -245,7 +245,7 @@ h6 {
 
 /* Footer */
 .site-footer {
-    background: #090a0c;
+    background: #000000;
     border-top: 1px solid var(--card-border);
     padding: 4rem 0 2rem;
     margin-top: 4rem;
@@ -298,12 +298,12 @@ h6 {
 }
 
 .footer-disclaimer {
-    color: #fca5a5;
+    color: #ffffff;
     font-weight: 600;
     padding: 1rem;
-    background: rgba(239, 68, 68, 0.1);
+    background: rgba(255, 102, 0, 0.1);
     border-radius: var(--border-radius-md);
-    border: 1px dashed rgba(239, 68, 68, 0.3);
+    border: 1px dashed rgba(255, 102, 0, 0.3);
 }
 
 /* ==========================================================================
@@ -334,7 +334,7 @@ h6 {
 .glass-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-    border-color: rgba(59, 130, 246, 0.3);
+    border-color: rgba(255, 102, 0, 0.3);
 }
 
 /* Hero Section */
@@ -354,7 +354,7 @@ h6 {
     right: -10%;
     width: 600px;
     height: 600px;
-    background: radial-gradient(circle, rgba(59, 130, 246, 0.15) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(255, 102, 0, 0.15) 0%, transparent 70%);
     border-radius: 50%;
     z-index: -1;
     filter: blur(50px);
@@ -367,7 +367,7 @@ h6 {
     left: -10%;
     width: 500px;
     height: 500px;
-    background: radial-gradient(circle, rgba(16, 185, 129, 0.1) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(251, 191, 36, 0.1) 0%, transparent 70%);
     border-radius: 50%;
     z-index: -1;
     filter: blur(50px);
@@ -417,7 +417,7 @@ h6 {
 .feature-icon {
     width: 50px;
     height: 50px;
-    background: rgba(59, 130, 246, 0.1);
+    background: rgba(255, 102, 0, 0.1);
     border-radius: 12px;
     display: flex;
     align-items: center;
