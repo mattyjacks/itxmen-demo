@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
         ctx.clearRect(0, 0, width, height);
 
         stars.forEach(star => {
-            ctx.fillStyle = \`rgba(255, 255, 255, \${star.alpha})\`;
+            ctx.fillStyle = `rgba(255, 255, 255, ${star.alpha})`;
             ctx.beginPath();
             ctx.arc(star.x, star.y, star.radius, 0, 2 * Math.PI);
             ctx.fill();

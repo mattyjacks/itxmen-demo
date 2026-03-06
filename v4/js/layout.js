@@ -14,7 +14,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 <nav class="main-nav">
                     <ul>
                         <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="what-why.html">What & Why</a></li>
                         <li><a href="services.html">Services</a></li>
+                        <li><a href="expertmatch.html">ExpertMatch</a></li>
+                        <li><a href="ai-blueprint.html">AI Blueprint</a></li>
+                        <li><a href="cybersecurity.html">Cybersecurity</a></li>
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </nav>
@@ -34,8 +39,14 @@ document.addEventListener('DOMContentLoaded', () => {
                         <h4>Links</h4>
                         <ul>
                             <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="what-why.html">What & Why</a></li>
                             <li><a href="services.html">Services</a></li>
+                            <li><a href="expertmatch.html">ExpertMatch</a></li>
+                            <li><a href="ai-blueprint.html">AI Blueprint</a></li>
+                            <li><a href="cybersecurity.html">Cybersecurity</a></li>
                             <li><a href="contact.html">Contact</a></li>
+                            <li><a href="tos.html">Terms of Service</a></li>
                         </ul>
                     </div>
                 </div>
