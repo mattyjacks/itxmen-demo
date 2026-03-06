@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact & Pitch | ITXMEN V4 Demo</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .pitch-card {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        .contact-info {
+            display: flex;
+            gap: 2rem;
+            margin-top: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .contact-method {
+            flex: 1;
+            min-width: 250px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="site-header-container"></div>
+
+    <main>
+        <section class="section page-header container relative z-10">
+            <h1 class="page-title fade-in-up">The V4 Pitch</h1>
+            <p class="hero-description fade-in-up stagger-1">A specialized message for Stephen Nolan.</p>
+
+            <div class="glass-card pitch-card fade-in-up stagger-2">
+                <h2 style="color: var(--accent-pink); margin-bottom: 1.5rem;">Stephen, the CEO</h2>
+                <p style="margin-bottom: 1rem; color: var(--text-primary);">
+                    You need a website that screams modern, sleek fractional IT leadership while delivering an
+                    unforgettable visual punch.
+                    This V4 demo brings <span class="gradient-text" style="font-weight:bold;">hot pink aesthetics</span>
+                    and an interactive <span class="gradient-text" style="font-weight:bold;">starscape background</span>
+                    to show clients that ITXMEN sits at the absolute cutting edge.
+                </p>
+                <p style="margin-bottom: 1rem; color: var(--text-primary);">
+                    Beautiful animations, dynamic javascript-driven layouts, and multi-page scalability.
+                </p>
+                <p style="font-weight: bold; color: var(--accent-pink-hover); margin-bottom: 2rem;">
+                    Let's elevate the brand.
+                </p>
+
+                <hr style="border:0; border-top: 1px solid var(--glass-border); margin: 2rem 0;">
+
+                <h3 style="margin-bottom: 1rem;">Get In Touch</h3>
+                <p style="color: var(--text-secondary);">We’ll create a high-level strategic plan summary tailored
+                    exclusively to your needs.</p>
+
+                <div class="contact-info">
+                    <div class="contact-method">
+                        <h4 style="color: var(--accent-pink); margin-bottom: 0.5rem;">Phone</h4>
+                        <p><a href="tel:9783101339" style="color: var(--text-primary); text-decoration: none;">(978)
+                                310-1339</a></p>
+                    </div>
+                    <div class="contact-method">
+                        <h4 style="color: var(--accent-pink); margin-bottom: 0.5rem;">Email</h4>
+                        <p><a href="mailto:hello@itxmen.com"
+                                style="color: var(--text-primary); text-decoration: none;">hello@itxmen.com</a></p>
+                    </div>
+                </div>
+
+                <div class="contact-info">
+                    <div class="contact-method">
+                        <h4 style="color: var(--accent-pink); margin-bottom: 0.5rem;">Hours</h4>
+                        <p style="color: var(--text-secondary);">09:00 AM – 05:00 PM</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="site-footer-container"></div>
+
+    <script src="js/layout.js"></script>
+    <script src="js/stars.js"></script>
+</body>
+
+</html>
