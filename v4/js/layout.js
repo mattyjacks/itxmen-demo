@@ -21,6 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <li><a href="ai-blueprint.html">AI Blueprint</a></li>
                         <li><a href="cybersecurity.html">Cybersecurity</a></li>
                         <li><a href="contact.html">Contact</a></li>
+                        <li><a href="game.html">🎮 Game</a></li>
                     </ul>
                 </nav>
             </div>
@@ -46,6 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             <li><a href="ai-blueprint.html">AI Blueprint</a></li>
                             <li><a href="cybersecurity.html">Cybersecurity</a></li>
                             <li><a href="contact.html">Contact</a></li>
+                            <li><a href="game.html">🎮 Game</a></li>
                             <li><a href="tos.html">Terms of Service</a></li>
                         </ul>
                     </div>
